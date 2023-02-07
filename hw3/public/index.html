@@ -1,0 +1,104 @@
+<!--
+Keoni Han
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+     </script>
+<title id="top header">Cheesecake Order</title>
+<link rel="stylesheet" href="/stylesheets/mystyle.css">
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+<img id= "imageCake" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/800px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg?20171018065901" alt="Cheesecake"
+<br/>
+
+<div id="Thank you">
+
+</div>
+
+<!--
+TABLE WHICH HOLDS THE ELEMENTS OF THE DROP DOWN MENU AND RADIO BUTTONS TO CHOOSE FLAVOR AND QUANTITY
+-->
+<table id = 'table'>
+    <tr>
+        <th>Quantity</th>
+        <th>Topping</th>
+    </tr>
+    <tr>
+        <td>
+            <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+        </td>
+        <td>
+            <form>
+                <input type="radio" name="Topping" id="Plain"> Plain <br>
+                <input type="radio" name="Topping" id="Cherry"> Cherry <br>
+                <input type="radio" name="Topping" id="Chocolate"> Chocolate <br>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<!--
+CREATES TEXT BOX FOR SPECIAL INSTRUCTIONS AND ORDER BUTTON
+-->
+<h3 id="Notes">Notes:</h3>
+<textarea id="descText" rows = "5" cols = "60" name = "description">
+Enter any special instructions here.
+</textarea><br>
+
+<button type="button" id = "button">Order</button>
+
+
+<br>
+
+<!--
+SHOWS HISTORY OF ORDER IN THE PAST MONTH REFERENCE FOR STARTER CODE: https://www.quanzhanketang.com/howto/howto_css_dropdown.html
+-->
+
+<table id = 'table'>
+    <tr>
+        <th><h id = "orderTitle">Orders for </h></th>
+        <th><div class="dropdown">
+            <button id= "monthDrop" class="dropbtn">Month</button>
+            <div class="dropdown-content">
+              <a id = "Jan">JAN</a>
+              <a href="#" id = "Feb">FEB</a>
+              <a href="#" id = "Mar">MAR</a>
+              <a href="#" id = "Apr">APR</a>
+              <a href="#" id = "May">MAY</a>
+              <a href="#" id = "Jun">JUN</a>
+              <a href="#" id = "Jul">JUL</a>
+              <a href="#" id = "Aug">AUG</a>
+              <a href="#" id = "Sep">SEP</a>
+              <a href="#" id = "Oct">OCT</a>
+              <a href="#" id = "Nov">NOV</a>
+              <a href="#" id = "Dec">DEC</a>
+            </div>
+          </div></th>
+    </tr>
+</table>
+
+
+<ul id = 'List'>
+    <li>11 Cherry</li>
+    <li>17 Chocolate</li>
+    <li>31 Plain</li>
+</ul>
+
+
+
+
+<script src="javascripts/main.js"></script>
+
+</body>
+</html>
